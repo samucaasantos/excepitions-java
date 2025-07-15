@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-//Solução ruim do exercício
+//Solução boa do exercício
 public class Program {
     public static void main(String[] args) {
 
@@ -41,7 +41,7 @@ public class Program {
         catch (DomainExcepition e) {
             System.out.println("Error in reservation: " + e.getMessage());
         }
-        catch (RuntimeException e) {
+        catch (Exception e) {
             System.out.println("Unexpected error");
         }
 
